@@ -22,10 +22,15 @@ public class Cafetera {
 
     public Cafetera(double cantidadMaxima, double cantidadActual) {
         this.cantidadMaxima = cantidadMaxima;
-        this.cantidadActual = cantidadActual;
         if(cantidadActual > cantidadMaxima){
-            
+            this.cantidadActual = cantidadMaxima;
+        } else{
+            this.cantidadActual = cantidadActual;
         }
+    }
+    
+    public void llenarCafetera (double cantidadActual, double cantidadMaxima){
+        cantidadActual = cantidadMaxima;
     }
     
     
