@@ -35,6 +35,16 @@ public class Pruebas {
         
         nespresso.vaciarCafetera();
         System.out.println(nespresso.getCantidadActual());
+        
+        PersonaR persona3 = new PersonaR("Persona 3", 20);
+        persona3.hacerCafe(nespresso);
+        persona3.beberCafé(nespresso, 300);
+        System.out.println("Una tercera persona se ha servido una taza, ahora queda: " 
+                + nespresso.getCantidadActual() + " c.c");
+        
+        
+        PersonaR persona4 = new PersonaR("Persona 4", 24);
+        System.out.println(persona3.equals(persona4));
 
     }
 
